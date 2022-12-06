@@ -1,0 +1,1 @@
+•Show 4‿14(⊣+⟜⊑⊒˘∘↕⊐⥊⟜0)¨<•FChars"data.txt"
