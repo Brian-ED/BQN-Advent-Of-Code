@@ -5,16 +5,10 @@ Split←{(⊐⟜1' '=𝕩)(↑⋈↓)𝕩}
 •Show ⊑¨{
     boxes‿moves:
     crates←(¬∧`)∘=⟜' '⊸/¨<˘{(⍉𝕩)/˜l↑/⁼1+4×↕⌈4÷˜l←⊑⌽≢𝕩}>¯1↓boxes
-    sNums ←1↓¨¬∘∊⟜('a'+↕26)⊸/¨moves
-    (¬∧`)∘≠⟜' '⊸/¨sNums
-    
-    
-    nums←>ToNums¨¨{𝕊 a‿b:
-        (<a)∾0‿2↓¨Split 2↓b
-    }¨Split¨sNums
-    
-    Moving←{move‿from‿to𝕊crates:
-        crates{(𝕩⊸∾)⌾(to⊸⊑) ((move+1)↓⊢)⌾(from⊸⊑)𝕨}(1+move)(⌊⟜≠↑⊢)from⊑crates
+    nums←>{ToNums¨𝕨<⊸∾0‿2↓¨Split 2↓𝕩}´¨Split¨1↓¨¬∘∊⟜('a'+↕26)⊸/¨moves
+
+    Moving←{move‿from‿to𝕊crates:           # right ↓ here you can remove the ⌽ and get the second solution
+        crates{(𝕩⊸∾)⌾(to⊸⊑) ((move+1)↓⊢)⌾(from⊸⊑)𝕨}⌽(1+move)(⌊⟜≠↑⊢)from⊑crates
     }
     crates Moving´ ⌽<˘¯1+nums
 
