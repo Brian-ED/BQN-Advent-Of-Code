@@ -1,0 +1,1 @@
+•SHow +´•ParseFloat¨(⊑⋈¯1⊸⊑)¨∊⟜('0'+↕10)⊸/¨•FLines"input.txt"
